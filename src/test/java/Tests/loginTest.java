@@ -9,13 +9,13 @@ public class loginTest extends baseTest{
  //   @Description("Login to Ndosi Website with valid credentials")
     public void loginWithValidCredentialss()throws InterruptedException{
 
-        loginPage.clickloginbutton();
+        loginpage.clickloginbutton();
         Thread.sleep(2000);
-        loginPage.enterEmail("noms@gmail.com");
+        loginpage.enterEmail("noms@gmail.com");
         Thread.sleep(2000);
-        loginPage.enterPassword("Password@2");
+        loginpage.enterPassword("Password@2");
         Thread.sleep(2000);
-        loginPage.submit();
+        loginpage.submit();
         //driver.quit();
     }
 

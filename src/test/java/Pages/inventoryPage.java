@@ -17,33 +17,33 @@ public class inventoryPage {
     WebDriverWait wait;
 
 
-   //Constructor
-   public inventoryPage(WebDriver driver) {
-       this.driver = driver;
-       this.wait=new WebDriverWait(driver, Duration.ofSeconds(15));
-       PageFactory.initElements(driver, this);
-   }
+    //Constructor
+    public inventoryPage(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        PageFactory.initElements(driver, this);
+    }
 
-   @FindBy(xpath = "//*[@id=\"app-root\"]/nav/div[1]/div[2]/div[1]/button/span[2]")
+    @FindBy(xpath = "//*[@id=\"app-root\"]/nav/div[1]/div[2]/div[1]/button/span[2]")
     WebElement LearnButton;
 
-   @FindBy(xpath = "//*[@id=\"app-root\"]/nav/div[1]/div[2]/div[1]/div/button[2]/span[2]")
+    @FindBy(xpath = "//*[@id=\"app-root\"]/nav/div[1]/div[2]/div[1]/div/button[2]/span[2]")
     WebElement LearnMaterialButton;
 
-   @FindBy(xpath = "//*[@id=\"tab-btn-web\"]/span[2]")
+    @FindBy(xpath = "//*[@id=\"tab-btn-web\"]/span[2]")
     WebElement AdvanceAutomationButton;
 
 
-   public void clickLearnButton(){
-       wait.until(ExpectedConditions.elementToBeClickable(LearnButton)).click();
+    public void clickLearnButton() {
 
-   }
+        wait.until(ExpectedConditions.elementToBeClickable(LearnButton)).click();
+    }
 
-   public void clickLearnMaterial(){
-       wait.until(ExpectedConditions.elementToBeClickable(LearnMaterialButton)).click();
-   }
+    public void clickLearnMaterial() {
+        wait.until(ExpectedConditions.elementToBeClickable(LearnMaterialButton)).click();
+    }
 
-   public  void clickAdvanceAutomationButton(){
-       wait.until(ExpectedConditions.elementToBeClickable(AdvanceAutomationButton)).click();
-   }
+    public void clickAdvanceAutomationButton() {
+        wait.until(ExpectedConditions.elementToBeClickable(AdvanceAutomationButton)).click();
+    }
 }

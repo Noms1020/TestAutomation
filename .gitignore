@@ -20,6 +20,8 @@ target/
 .settings
 .springBeans
 .sts4-cache
+.ai-code-tracking.json
+.idea/
 
 ### NetBeans ###
 /nbproject/private/

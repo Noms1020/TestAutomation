@@ -1,24 +1,28 @@
 package Tests;
 
 
-
+import Base.baseTest;
 import org.testng.annotations.Test;
 
-public class inventoryTest extends baseTest{
-    @Test
-    public void callLogin(){
-        loginPage.clickloginbutton();
-        loginPage.enterEmail("noms@gmail.com");
-        loginPage.enterPassword("Password@2");
-        loginPage.submit();
+public class inventoryTest extends baseTest {
+    @Test(priority = 0)
+    public void callLogin() throws InterruptedException {
+
+        loginpage.clickloginbutton();
+
+        loginpage.enterEmail("noms@gmail.com");
+        loginpage.enterPassword("Password@2");
+        loginpage.submit();
     }
 
     @Test(priority = 1)
-    public void accessLearningMaterials(){
+    public void accessLearningMaterials() throws InterruptedException {
 
-        inventoryPage.clickLearnButton();
-        inventoryPage.clickLearnMaterial();
-        inventoryPage.clickAdvanceAutomationButton();
+        inventorypage.clickLearnButton();
+
+        inventorypage.clickLearnMaterial();
+
+        inventorypage.clickAdvanceAutomationButton();
     }
 
 

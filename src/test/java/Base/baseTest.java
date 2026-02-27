@@ -14,10 +14,10 @@ public class baseTest {
     public  final String myBrowser ="chrome";
     public  final WebDriver driver = browserFactory.startBrowser(myBrowser,url);
 
-    public loginPage loginPage = PageFactory.initElements(driver,loginPage.class);
+    public loginPage loginpage = new loginPage(driver);
 
     //public inventoryPage inventoryPage = PageFactory.initElements(driver,inventoryPage.class);
-    public  inventoryPage inventoryPage= new inventoryPage(driver);
+    public  inventoryPage inventorypage= new inventoryPage(driver);
 
 
 
